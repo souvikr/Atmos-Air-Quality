@@ -1,0 +1,194 @@
+Souvik Roy@DESKTOP-13H395T MINGW64 ~/Documents/GitHub/Atmos-Air-Quality (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    example.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Kiki/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Souvik Roy@DESKTOP-13H395T MINGW64 ~/Documents/GitHub/Atmos-Air-Quality (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    example.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Kiki/
+        commitme.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Souvik Roy@DESKTOP-13H395T MINGW64 ~/Documents/GitHub/Atmos-Air-Quality (master)
+$ git add example.txt commitme.txt
+
+Souvik Roy@DESKTOP-13H395T MINGW64 ~/Documents/GitHub/Atmos-Air-Quality (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   commitme.txt
+        deleted:    example.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Kiki/
+
+
+Souvik Roy@DESKTOP-13H395T MINGW64 ~/Documents/GitHub/Atmos-Air-Quality (master)
+$ git commit -m "souviks princly requests"
+[master 545bbc1] souviks princly requests
+ 2 files changed, 3 deletions(-)
+ create mode 100644 commitme.txt
+ delete mode 100644 example.txt
+
+Souvik Roy@DESKTOP-13H395T MINGW64 ~/Documents/GitHub/Atmos-Air-Quality (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Kiki/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Souvik Roy@DESKTOP-13H395T MINGW64 ~/Documents/GitHub/Atmos-Air-Quality (master)
+$ echo "hello there" >> commitme.txt
+
+Souvik Roy@DESKTOP-13H395T MINGW64 ~/Documents/GitHub/Atmos-Air-Quality (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   commitme.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Kiki/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Souvik Roy@DESKTOP-13H395T MINGW64 ~/Documents/GitHub/Atmos-Air-Quality (master)
+$ git add commitme.txt
+warning: LF will be replaced by CRLF in commitme.txt.
+The file will have its original line endings in your working directory
+
+Souvik Roy@DESKTOP-13H395T MINGW64 ~/Documents/GitHub/Atmos-Air-Quality (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   commitme.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Kiki/
+
+
+Souvik Roy@DESKTOP-13H395T MINGW64 ~/Documents/GitHub/Atmos-Air-Quality (master)
+$ git commit
+[master b1099b6] helo
+ 1 file changed, 1 insertion(+)
+
+Souvik Roy@DESKTOP-13H395T MINGW64 ~/Documents/GitHub/Atmos-Air-Quality (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Kiki/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Souvik Roy@DESKTOP-13H395T MINGW64 ~/Documents/GitHub/Atmos-Air-Quality (master)
+$ git pull
+Already up to date.
+
+Souvik Roy@DESKTOP-13H395T MINGW64 ~/Documents/GitHub/Atmos-Air-Quality (master)
+$ git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/souvikr/Atmos-Air-Quality
+   7755730..0c8d618  master     -> origin/master
+Merge made by the 'recursive' strategy.
+ hello.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello.txt
+
+Souvik Roy@DESKTOP-13H395T MINGW64 ~/Documents/GitHub/Atmos-Air-Quality (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Kiki/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Souvik Roy@DESKTOP-13H395T MINGW64 ~/Documents/GitHub/Atmos-Air-Quality (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Kiki/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Souvik Roy@DESKTOP-13H395T MINGW64 ~/Documents/GitHub/Atmos-Air-Quality (master)
+$ git push origin
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (8/8), 840 bytes | 140.00 KiB/s, done.
+Total 8 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/souvikr/Atmos-Air-Quality.git
+   0c8d618..2168507  master -> master
